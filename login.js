@@ -1,10 +1,13 @@
 const gameText = document.getElementById('game-text2');
 const userInput = document.getElementById('user-input2');
 const submitBtn = document.getElementById('submit-btn2');
-function print(text){
-  game Text.innerText+= text + "\n"
-  game Text.scrollTop = gameText.scrollHeight;
+
+// Print to the screen
+function print(text) {
+    gameText.innerText += text + "\n";
+    gameText.scrollTop = gameText.scrollHeight;
 }
+
 // Sleep function
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
